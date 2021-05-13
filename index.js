@@ -25,6 +25,8 @@ const questionsGeneric = [
   },
 ];
 
+askToAdd();
+
 function askToAdd() {
   inquirer
     .prompt([
