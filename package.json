@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Ajurgs/Team-Profile-Gen/issues"
   },
-  "homepage": "https://github.com/Ajurgs/Team-Profile-Gen#readme"
+  "homepage": "https://github.com/Ajurgs/Team-Profile-Gen#readme",
+  "dependencies": {
+    "inquirer": "^8.0.0"
+  }
 }
