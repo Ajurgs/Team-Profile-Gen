@@ -157,11 +157,12 @@ function buildTemplate() {
       <h1>My Team</h1>
     </header>
     <main class="container d-flex flex-wrap">
-      
+      ${addTeamCards()}
     </main>
   </body>
 </html>
     `;
+  return template;
 }
 
 function addTeamCards() {
@@ -177,9 +178,9 @@ function addTeamCards() {
                     </div>
                     <div class="card-body">
                         <ul class="list-group">
-                            <li class="list-group-item">An item</li>
-                            <li class="list-group-item">A second item</li>
-                            <li class="list-group-item">A third item</li>
+                            <li class="list-group-item">ID: ${member.getId()}</li>
+                            <li class="list-group-item">Email: <a href="mailto:${member.getEmail()}">${member.getEmail()}</a> </li>
+                            <li class="list-group-item">Office Number: ${member.getOfficeNum()}</li>
                         </ul>
                     </div>
                 </div>`;
@@ -194,9 +195,9 @@ function addTeamCards() {
                     </div>
                     <div class="card-body">
                         <ul class="list-group">
-                            <li class="list-group-item">An item</li>
-                            <li class="list-group-item">A second item</li>
-                            <li class="list-group-item">A third item</li>
+                            <li class="list-group-item">ID: ${member.getId()}</li>
+                            <li class="list-group-item">Email: <a href="mailto:${member.getEmail()}">${member.getEmail()}</a></li>
+                            <li class="list-group-item">Github: <a href="https://github.com/${member.getGithub()}">${member.getGithub()}</a></li>
                         </ul>
                     </div>
                 </div>`;
@@ -211,9 +212,9 @@ function addTeamCards() {
                 </div>
                 <div class="card-body">
                     <ul class="list-group">
-                        <li class="list-group-item">An item</li>
-                        <li class="list-group-item">A second item</li>
-                        <li class="list-group-item">A third item</li>
+                        <li class="list-group-item">ID: ${member.getId()}</li>
+                        <li class="list-group-item">Email: <a href="mailto:${member.getEmail()}">${member.getEmail()}</a></li>
+                        <li class="list-group-item">School: ${member.getSchool()}</li>
                     </ul>
                 </div>
                 </div>`;
@@ -221,4 +222,5 @@ function addTeamCards() {
       }
     }
   });
+  return temp;
 }
